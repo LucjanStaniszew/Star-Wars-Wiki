@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(0, 140, 255);
+    text-align: center;
+}
+
+/* Color rgb(39, 36, 36) */
+
+body{
+    background-color: rgb(39, 36, 36);
+}
+
+/* Header */
+
+header{
+    background-color: rgb(39, 36, 36);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.logo{
+    height: 10vh;
+    width: auto;
+}
+
+.fondo{
+    background-color: gold;
+}
+
+.navbar-nav{
+    gap: 20px;
+}
+
+.dropdown-menu{
+    background-color: rgb(39, 36, 36);
+}
+
+.nav-link, .dropdown-item{
+    text-decoration: none;
+    color: gold;
+    border: 1px solid gold;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.nav-link:hover, .dropdown-item:hover{
+    background-color: gold;
+    color: rgb(39, 36, 36);
+    border: 1px solid rgb(39, 36, 36);
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.f-nav{
+    width: 25vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.f-nav li{
+    list-style: none;
+}
+
+.rrss{
+    height: 8vh;
+    width: auto;
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;;
+}
+
+@media (max-width: 425px) {
+    footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .f-nav{
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+/* Estrellas */
+/* Estrellas */
+/* Estrellas */
+
+.checked{
+    color: gold;
+}
+
+/* Estrellas */
+/* Estrellas */
+/* Estrellas */
+
+/* Home */
+
+.home{
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.home h2{
+    text-align: center;
+}
+
+.home-img{
+    height: auto;
+    width: 80vw;
+}
+
+.img-car{
+    width: 80vw;
+    height: auto;
+}
+
+/* Games */
+
+.mgs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.card-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid gold;
+    width: 30vw;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.card-img{
+    width: 25vw;
+    height: auto;
+}
+
+/* Contacto */
+
+.contacto{
+    display: flex;
+}
+
+.contact-form, .map-yt{
+    width: 50vw;
+}
+
+.contact-form h2, .contact-form article{
+    margin: 0 0 20px 0;
+}
+
+/* GRID */
+form{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    align-items: center;
+    gap: 10px;
+}
+.name{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.inname{
+    grid-column: 3/5;
+    grid-row: 1/2;
+}
+.last{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.inlas{
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+.age{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.inage{
+    grid-column: 3/5;
+    grid-row: 3/4;
+}
+.color{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.incol{
+    grid-column: 3/5;
+    grid-row: 4/5;
+}
+.surname{
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+.insur{
+    grid-column: 3/5;
+    grid-row: 5/6;
+}
+.mail{
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+.inmail{
+    grid-column: 3/5;
+    grid-row: 6/7;
+}
+.comments{
+    grid-column: 2/4;
+    grid-row: 7/8;
+}
+.incomments{
+    grid-column: 2/4;
+    grid-row: 8/9;
+}
+.sub{
+    grid-column: 3/4;
+    grid-row: 9/10;
+}
+.res{
+    grid-column: 2/3;
+    grid-row: 9/10;
+}
+
+/* FIN DE GRID */
+
+input{
+    width: 20vw;
+}
+
+textarea{
+    height: 10vh;
+    width: 40vw;
+}
+
+button{
+    border: 2px solid gold;
+    background-color: rgb(39, 36, 36);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+iframe{
+    margin: 20px 0;
+    height: 40vh;
+    width: 40vw;
+}
+
+@media (max-width: 425px) {
+    .contacto{
+        flex-direction: column;
+    }
+    .contact-form, .map-yt{
+        width: 100vw;
+    }
+    input{
+        width: 40vw;
+    }
+    .incomments{
+        grid-column: 1/5;
+        justify-self: center;
+    }
+    textarea{
+        width: 80vw;
+    }
+    .map-yt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    iframe{
+        height: 50vh;
+        width: 80vw;
+    }
+}
