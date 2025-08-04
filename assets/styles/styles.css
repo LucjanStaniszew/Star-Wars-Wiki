@@ -130,7 +130,7 @@ footer{
     height: auto;
 }
 
-/* Games */
+/* Ranking */
 
 .mgs{
     display: flex;
@@ -147,7 +147,7 @@ footer{
     gap: 20px;
 }
 
-.card{
+.card-template{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,6 +162,18 @@ footer{
 .card-img{
     width: 25vw;
     height: auto;
+}
+
+@media (max-width: 430px) {
+    .card-container{
+        flex-direction: column;
+    }
+    .card-template{
+        width: 80vw;
+    }
+    .card-img{
+        width: 50vw;
+    }
 }
 
 /* Contacto */
@@ -301,6 +313,120 @@ iframe{
     }
     iframe{
         height: 50vh;
+        width: 80vw;
+    }
+}
+
+/* Galería */
+
+.main-gal{
+    display: grid;
+    grid-template-areas:
+    "ep1 ep1 ep2 ep2 ep3 ep3"
+    "ep4 ep4 ep5 ep5 ep6 ep6"
+    "andor andor bb bb owk owk"
+    ". fett fett mando mando ."
+    "out out repcom repcom zer zer"
+    ". kot kot kot2 kot2 ."
+    ;
+    gap: 30px;
+    justify-content: space-around;
+    justify-items: center;
+}
+.main-gal img{
+    height: 60vh;
+    width: auto;
+    border-radius: 15px;
+}
+.ep1{
+    grid-area: ep1;
+}
+.ep2{
+    grid-area: ep2;
+}
+.ep3{
+    grid-area: ep3;
+}
+.ep4{
+    grid-area: ep4;
+}
+.ep5{
+    grid-area: ep5;
+}
+.ep6{
+    grid-area: ep6;
+}
+.andor{
+    grid-area: andor;
+}
+.tbb{
+    grid-area: bb;
+}
+.obikenobi{
+    grid-area: owk;
+}
+.bobafett{
+    grid-area: fett;
+}
+.mando{
+    grid-area: mando;
+}
+.outlaws{
+    grid-area: out;
+}
+.swrc{
+    grid-area: repcom;
+}
+.swzc{
+    grid-area: zer;
+}
+.kotor{
+    grid-area: kot;
+}
+.kotor2{
+    grid-area: kot2;
+}
+
+@media (max-width: 430px) {
+    .main-gal{
+        grid-template-areas:
+        "ep1 ep2"
+        "ep3 ep4"
+        "ep5 ep6"
+        "andor bb"
+        "owk fett"
+        "mando mando"
+        "out repcom"
+        "zer zer"
+        "kot kot2"
+        ;
+    }
+    .main-gal img{
+        height: 50vh;
+    }
+}
+
+/* Vader */
+
+.main-vader{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card{
+    background-color: rgb(39, 36, 36);
+    border: 2px solid gold;
+    width: 30vw;
+}
+
+@media (max-width: 430px) {
+    .main-vader{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
         width: 80vw;
     }
 }
