@@ -1,432 +1,319 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: rgb(0, 140, 255);
-    text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  font-family: "Press Start 2P";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(0, 140, 255);
+  text-align: center;
 }
 
-/* Color rgb(39, 36, 36) */
-
-body{
-    background-color: rgb(39, 36, 36);
+body {
+  background-color: rgb(39, 36, 36);
 }
 
-/* Header */
-
-header{
-    background-color: rgb(39, 36, 36);
-    position: sticky;
-    top: 0px;
-    z-index: 10;
+header {
+  background-color: rgb(39, 36, 36);
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+header .logo {
+  height: 10vh;
+  width: auto;
+}
+header .fondo {
+  background-color: gold;
+}
+header .navbar-nav {
+  gap: 20px;
+  text-align: center;
+}
+header .navbar-nav .dropdown-menu {
+  background-color: rgb(39, 36, 36);
+  text-align: center;
+}
+header .navbar-nav .nav-link, header .navbar-nav .dropdown-item {
+  text-decoration: none;
+  color: gold;
+  border: 1px solid gold;
+  border-radius: 15px;
+  font-weight: bold;
+}
+header .navbar-nav .nav-link:hover, header .navbar-nav .dropdown-item:hover {
+  background-color: gold;
+  color: rgb(39, 36, 36);
+  border: 1px solid rgb(39, 36, 36);
 }
 
-.logo{
-    height: 10vh;
-    width: auto;
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
 }
-
-.fondo{
-    background-color: gold;
+footer h2 {
+  font-size: 1rem;
 }
-
-.navbar-nav{
-    gap: 20px;
+footer .f-nav {
+  width: 25vw;
+  display: flex;
+  justify-content: space-around;
 }
-
-.dropdown-menu{
-    background-color: rgb(39, 36, 36);
+footer .f-nav li {
+  list-style: none;
 }
-
-.nav-link, .dropdown-item{
-    text-decoration: none;
-    color: gold;
-    border: 1px solid gold;
-    border-radius: 15px;
-    font-weight: bold;
+footer .f-nav li .rrss {
+  height: 8vh;
+  width: auto;
 }
-
-.nav-link:hover, .dropdown-item:hover{
-    background-color: gold;
-    color: rgb(39, 36, 36);
-    border: 1px solid rgb(39, 36, 36);
+footer .f-nav li .whatsapp {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
 }
-
-/* Footer */
-
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.f-nav{
-    width: 25vw;
-    display: flex;
-    justify-content: space-around;
-}
-
-.f-nav li{
-    list-style: none;
-}
-
-.rrss{
-    height: 8vh;
-    width: auto;
-}
-
-.whatsapp{
-    position: fixed;
-    bottom: 50px;
-    right: 50px;;
-}
-
-@media (max-width: 425px) {
-    footer{
-        flex-direction: column;
-        gap: 20px;
-    }
-    .f-nav{
-        justify-content: center;
-        gap: 20px;
-    }
-}
-
-/* Estrellas */
-/* Estrellas */
-/* Estrellas */
-
-.checked{
-    color: gold;
-}
-
-/* Estrellas */
-/* Estrellas */
-/* Estrellas */
-
-/* Home */
-
-.home{
-    padding: 20px 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-}
-
-.home h2{
-    text-align: center;
-}
-
-.home-img{
-    height: auto;
-    width: 80vw;
-}
-
-.img-car{
-    width: 80vw;
-    height: auto;
-}
-
-/* Ranking */
-
-.mgs{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 0 20px;
-}
-
-.card-container{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card-template{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid gold;
-    width: 30vw;
-    border-radius: 10px;
-    padding: 10px;
-    gap: 10px;
-}
-
-.card-img{
-    width: 25vw;
-    height: auto;
-}
-
 @media (max-width: 430px) {
-    .card-container{
-        flex-direction: column;
-    }
-    .card-template{
-        width: 80vw;
-    }
-    .card-img{
-        width: 50vw;
-    }
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .f-nav {
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
-/* Contacto */
-
-.contacto{
-    display: flex;
+.home {
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.home h2 {
+  text-align: center;
+  font-size: 1rem;
+}
+.home .img-car {
+  width: 80vw;
+  height: auto;
 }
 
-.contact-form, .map-yt{
-    width: 50vw;
+.contacto {
+  display: flex;
 }
-
-.contact-form h2, .contact-form article{
-    margin: 0 0 20px 0;
+.contacto .contact-form, .contacto .map-yt {
+  width: 50vw;
 }
-
-/* GRID */
-form{
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-    align-items: center;
-    gap: 10px;
+.contacto .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.name{
-    grid-column: 1/2;
-    grid-row: 1/2;
+.contacto .contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.inname{
-    grid-column: 3/5;
-    grid-row: 1/2;
+.contacto .contact-form form article {
+  display: flex;
+  justify-content: space-between;
 }
-.last{
-    grid-column: 1/2;
-    grid-row: 2/3;
+.contacto .contact-form form textarea {
+  height: 20vh;
+  width: 40vw;
 }
-.inlas{
-    grid-column: 3/5;
-    grid-row: 2/3;
+.contacto .contact-form form button {
+  width: 20vw;
+  border: 2px solid gold;
+  background-color: rgb(39, 36, 36);
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
 }
-.age{
-    grid-column: 1/2;
-    grid-row: 3/4;
+.contacto .map-yt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.inage{
-    grid-column: 3/5;
-    grid-row: 3/4;
+.contacto .map-yt iframe {
+  margin: 20px 0;
+  height: 40vh;
+  width: 40vw;
 }
-.color{
-    grid-column: 1/2;
-    grid-row: 4/5;
-}
-.incol{
-    grid-column: 3/5;
-    grid-row: 4/5;
-}
-.surname{
-    grid-column: 1/2;
-    grid-row: 5/6;
-}
-.insur{
-    grid-column: 3/5;
-    grid-row: 5/6;
-}
-.mail{
-    grid-column: 1/2;
-    grid-row: 6/7;
-}
-.inmail{
-    grid-column: 3/5;
-    grid-row: 6/7;
-}
-.comments{
-    grid-column: 2/4;
-    grid-row: 7/8;
-}
-.incomments{
-    grid-column: 2/4;
-    grid-row: 8/9;
-}
-.sub{
-    grid-column: 3/4;
-    grid-row: 9/10;
-}
-.res{
-    grid-column: 2/3;
-    grid-row: 9/10;
-}
-
-/* FIN DE GRID */
-
-input{
+@media (max-width: 430px) {
+  .contacto {
+    flex-direction: column;
+  }
+  .contacto .contact-form, .contacto .map-yt {
+    width: 100vw;
+  }
+  .contacto .contact-form {
+    flex-flow: column wrap;
+  }
+  .contacto .contact-form form input {
+    width: 60vw;
+  }
+  .contacto .contact-form form .incol {
     width: 20vw;
-}
-
-textarea{
-    height: 10vh;
-    width: 40vw;
-}
-
-button{
-    border: 2px solid gold;
-    background-color: rgb(39, 36, 36);
-    border-radius: 10px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-iframe{
-    margin: 20px 0;
-    height: 40vh;
-    width: 40vw;
-}
-
-@media (max-width: 425px) {
-    .contacto{
-        flex-direction: column;
-    }
-    .contact-form, .map-yt{
-        width: 100vw;
-    }
-    input{
-        width: 40vw;
-    }
-    .incomments{
-        grid-column: 1/5;
-        justify-self: center;
-    }
-    textarea{
-        width: 80vw;
-    }
-    .map-yt{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    iframe{
-        height: 50vh;
-        width: 80vw;
-    }
-}
-
-/* Galería */
-
-.main-gal{
-    display: grid;
-    grid-template-areas:
-    "ep1 ep1 ep2 ep2 ep3 ep3"
-    "ep4 ep4 ep5 ep5 ep6 ep6"
-    "andor andor bb bb owk owk"
-    ". fett fett mando mando ."
-    "out out repcom repcom zer zer"
-    ". kot kot kot2 kot2 ."
-    ;
-    gap: 30px;
-    justify-content: space-around;
-    justify-items: center;
-}
-.main-gal img{
-    height: 60vh;
-    width: auto;
-    border-radius: 15px;
-}
-.ep1{
-    grid-area: ep1;
-}
-.ep2{
-    grid-area: ep2;
-}
-.ep3{
-    grid-area: ep3;
-}
-.ep4{
-    grid-area: ep4;
-}
-.ep5{
-    grid-area: ep5;
-}
-.ep6{
-    grid-area: ep6;
-}
-.andor{
-    grid-area: andor;
-}
-.tbb{
-    grid-area: bb;
-}
-.obikenobi{
-    grid-area: owk;
-}
-.bobafett{
-    grid-area: fett;
-}
-.mando{
-    grid-area: mando;
-}
-.outlaws{
-    grid-area: out;
-}
-.swrc{
-    grid-area: repcom;
-}
-.swzc{
-    grid-area: zer;
-}
-.kotor{
-    grid-area: kot;
-}
-.kotor2{
-    grid-area: kot2;
-}
-
-@media (max-width: 430px) {
-    .main-gal{
-        grid-template-areas:
-        "ep1 ep2"
-        "ep3 ep4"
-        "ep5 ep6"
-        "andor bb"
-        "owk fett"
-        "mando mando"
-        "out repcom"
-        "zer zer"
-        "kot kot2"
-        ;
-    }
-    .main-gal img{
-        height: 50vh;
-    }
-}
-
-/* Vader */
-
-.main-vader{
+  }
+  .contacto .contact-form form textarea {
+    width: 90vw;
+  }
+  .contacto .contact-form form button {
+    width: 45vw;
+  }
+  .contacto .map-yt {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto .map-yt iframe {
+    height: 50vh;
+    width: 80vw;
+  }
 }
 
-.card{
-    background-color: rgb(39, 36, 36);
-    border: 2px solid gold;
-    width: 30vw;
+.main-gal {
+  display: grid;
+  grid-template-areas: "ep1 ep1 ep2 ep2 ep3 ep3" "ep4 ep4 ep5 ep5 ep6 ep6" "andor andor bb bb owk owk" ". fett fett mando mando ." "out out repcom repcom zer zer" ". kot kot kot2 kot2 .";
+  gap: 30px;
+  justify-content: space-around;
+  justify-items: center;
 }
-
+.main-gal img {
+  height: 60vh;
+  width: auto;
+  border-radius: 15px;
+}
+.main-gal .ep1 {
+  grid-area: ep1;
+}
+.main-gal .ep2 {
+  grid-area: ep2;
+}
+.main-gal .ep3 {
+  grid-area: ep3;
+}
+.main-gal .ep4 {
+  grid-area: ep4;
+}
+.main-gal .ep5 {
+  grid-area: ep5;
+}
+.main-gal .ep6 {
+  grid-area: ep6;
+}
+.main-gal .andor {
+  grid-area: andor;
+}
+.main-gal .tbb {
+  grid-area: bb;
+}
+.main-gal .obikenobi {
+  grid-area: owk;
+}
+.main-gal .bobafett {
+  grid-area: fett;
+}
+.main-gal .mando {
+  grid-area: mando;
+}
+.main-gal .outlaws {
+  grid-area: out;
+}
+.main-gal .swrc {
+  grid-area: repcom;
+}
+.main-gal .swzc {
+  grid-area: zer;
+}
+.main-gal .kotor {
+  grid-area: kot;
+}
+.main-gal .kotor2 {
+  grid-area: kot2;
+}
 @media (max-width: 430px) {
-    .main-vader{
-        flex-direction: column;
-        align-items: center;
-    }
-    .card{
-        width: 80vw;
-    }
+  .main-gal {
+    grid-template-areas: "ep1 ep2" "ep3 ep4" "ep5 ep6" "andor bb" "owk fett" "mando mando" "out repcom" "zer zer" "kot kot2";
+  }
+  .main-gal img {
+    height: 50vh;
+  }
 }
+
+.mgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+.mgs .card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.mgs .card-container .card-template {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gold;
+  width: 30vw;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 10px;
+  text-align: center;
+}
+.mgs .card-container .card-template .checked {
+  color: gold;
+}
+.mgs .card-container .card-template .card-img {
+  width: 25vw;
+  height: auto;
+}
+@media (max-width: 430px) {
+  .mgs .card-container {
+    flex-direction: column;
+  }
+  .mgs .card-container .card-template {
+    width: 80vw;
+  }
+  .mgs .card-container .card-template .card-img {
+    width: 50vw;
+  }
+}
+
+.main-vader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.main-vader .card {
+  background-color: rgb(39, 36, 36);
+  border: 2px solid gold;
+  width: 30vw;
+}
+.main-vader .card .card-body {
+  text-align: center;
+  color: gold;
+}
+@media (max-width: 430px) {
+  .main-vader {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-vader .card {
+    width: 80vw;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

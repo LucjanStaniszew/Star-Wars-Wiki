@@ -1,0 +1,78 @@
+@use "variables" as v;
+
+.contacto{
+    display: flex;
+    .contact-form, .map-yt{
+        width: 50vw;
+    }
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            article{
+                display: flex;
+                justify-content: space-between;
+            }
+            textarea{
+                height: 20vh;
+                width: 40vw;
+            }
+            button{
+                width: 20vw;
+                border: 2px solid gold;
+                background-color: rgb(39, 36, 36);
+                border-radius: 10px;
+                padding: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+    .map-yt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        iframe{
+            margin: 20px 0;
+            height: 40vh;
+            width: 40vw;
+        }
+    }
+    @include v.mobile{
+        flex-direction: column;
+        .contact-form, .map-yt{
+            width: 100vw;
+        }
+        .contact-form{
+            flex-flow: column wrap;
+            form{
+                input{
+                    width: 60vw;
+                }
+                .incol{
+                    width: 20vw;
+                }
+                textarea{
+                    width: 90vw;
+                }
+                button{
+                    width: 45vw;
+                }
+            }
+        }
+        .map-yt{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            iframe{
+                height: 50vh;
+                width: 80vw;
+            }
+        }
+    }
+}

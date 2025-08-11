@@ -1,0 +1,85 @@
+@use "variables" as v;
+
+.main-gal{
+    display: grid;
+    grid-template-areas:
+    "ep1 ep1 ep2 ep2 ep3 ep3"
+    "ep4 ep4 ep5 ep5 ep6 ep6"
+    "andor andor bb bb owk owk"
+    ". fett fett mando mando ."
+    "out out repcom repcom zer zer"
+    ". kot kot kot2 kot2 ."
+    ;
+    gap: 30px;
+    justify-content: space-around;
+    justify-items: center;
+    img{
+        height: 60vh;
+        width: auto;
+        border-radius: 15px;
+    }
+    .ep1{
+        grid-area: ep1;
+    }
+    .ep2{
+        grid-area: ep2;
+    }
+    .ep3{
+        grid-area: ep3;
+    }
+    .ep4{
+        grid-area: ep4;
+    }
+    .ep5{
+        grid-area: ep5;
+    }
+    .ep6{
+        grid-area: ep6;
+    }
+    .andor{
+        grid-area: andor;
+    }
+    .tbb{
+        grid-area: bb;
+    }
+    .obikenobi{
+        grid-area: owk;
+    }
+    .bobafett{
+        grid-area: fett;
+    }
+    .mando{
+        grid-area: mando;
+    }
+    .outlaws{
+        grid-area: out;
+    }
+    .swrc{
+        grid-area: repcom;
+    }
+    .swzc{
+        grid-area: zer;
+    }
+    .kotor{
+        grid-area: kot;
+    }
+    .kotor2{
+        grid-area: kot2;
+    }
+    @include v.mobile{
+        grid-template-areas:
+        "ep1 ep2"
+        "ep3 ep4"
+        "ep5 ep6"
+        "andor bb"
+        "owk fett"
+        "mando mando"
+        "out repcom"
+        "zer zer"
+        "kot kot2"
+        ;
+        img{
+            height: 50vh;
+        }
+    }
+}
