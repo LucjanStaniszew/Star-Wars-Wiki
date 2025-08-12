@@ -202,7 +202,7 @@ footer .f-nav li .whatsapp {
   .contacto .contact-form form textarea {
     width: 90vw;
   }
-  .contacto .contact-form form button {
+  .contacto .contact-form form .buttons button {
     width: 45vw;
   }
   .contacto .map-yt {
