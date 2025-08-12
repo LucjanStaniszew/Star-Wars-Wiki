@@ -22,13 +22,21 @@
                 height: 20vh;
                 width: 40vw;
             }
-            button{
-                width: 20vw;
-                border: 2px solid gold;
-                background-color: rgb(39, 36, 36);
+            .buttons{
+                justify-content: space-around;
+                button{
+                    width: 15vw;
+                    border: 2px solid gold;
+                    background-color: rgb(39, 36, 36);
                 border-radius: 10px;
                 padding: 10px;
                 cursor: pointer;
+                &:hover{
+                    border: v.$colorSecundario solid 2px;
+                    background-color: gold;
+                    color: v.$colorPrimario;
+                }
+            }
             }
         }
     }

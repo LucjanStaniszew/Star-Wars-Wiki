@@ -1,4 +1,5 @@
 @use "variables" as v;
+@use "anims";
 
 footer{
     display: flex;
@@ -23,6 +24,7 @@ footer{
                 position: fixed;
                 bottom: 100px;
                 right: 50px;
+                @extend %vibrar;
             }
         }
     }

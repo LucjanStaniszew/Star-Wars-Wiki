@@ -1,4 +1,5 @@
 @use "variables" as v;
+@use "anims";
 
 .main-gal{
     display: grid;
@@ -17,6 +18,10 @@
         height: 60vh;
         width: auto;
         border-radius: 15px;
+        &:hover{
+            @extend %scaleUp;
+            z-index: 2;
+        }
     }
     .ep1{
         grid-area: ep1;
@@ -68,15 +73,22 @@
     }
     @include v.mobile{
         grid-template-areas:
-        "ep1 ep2"
-        "ep3 ep4"
-        "ep5 ep6"
-        "andor bb"
-        "owk fett"
-        "mando mando"
-        "out repcom"
-        "zer zer"
-        "kot kot2"
+        "ep1"
+        "ep2"
+        "ep3"
+        "ep4"
+        "ep5"
+        "ep6"
+        "andor"
+        "bb"
+        "owk"
+        "fett"
+        "mando"
+        "out"
+        "repcom"
+        "zer"
+        "kot"
+        "kot2"
         ;
         img{
             height: 50vh;
