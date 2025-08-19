@@ -5,6 +5,13 @@ header{
     position: sticky;
     top: 0px;
     z-index: 2;
+    h1{
+        font-size: 1.25rem;
+        span{
+            font-size: 0.75rem;
+            color: gold;
+        }
+    }
     .logo{
         height: 10vh;
         width: auto;
